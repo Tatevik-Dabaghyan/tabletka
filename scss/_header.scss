@@ -1,0 +1,71 @@
+.header-container {
+   display: grid;
+   grid-template-rows: repeat(2, min-content);
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+
+   &__itms {
+      padding: 5px 10px;
+   }
+
+   .tel{
+      label{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+     }
+   }
+
+   .logo{
+      display: flex;
+      justify-content: center;
+   }
+
+   .account{
+      display: flex;
+      justify-content: right;
+      gap: 7px;
+   }
+
+   ul{
+      border-top: 1px solid $color-primary-dark;
+      grid-column: 1/4;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      
+      li{
+         padding: 10px;
+      }
+   }
+
+   svg{
+      width: 20px;
+      height: 20px;
+      fill: $color-primary-dark;
+   }
+}
+
+.account svg, .tel svg{
+   transition: $trnsition;
+}
+
+.account>*:hover svg, .tel label:hover svg{
+   fill: #68bd45;
+}
+
+
+
+.nav {
+}
+.social {
+}
+.logo {
+}
+.account {
+}
+.menu {
+}
+.btn {
+}

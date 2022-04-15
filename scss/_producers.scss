@@ -1,0 +1,20 @@
+.producers {
+}
+.producers-container { 
+		box-shadow: $shadow;
+		&__itms {
+         //background-color: $color-secondary-green;
+         background-image: $gradient-secondary;
+         display: flex;
+         gap: 20px;
+         width: 100%;
+         padding: 20px;
+		}
+
+		&__itm {
+         border-radius: 2px;
+         img{
+            width: 100%;
+         }
+		}
+}

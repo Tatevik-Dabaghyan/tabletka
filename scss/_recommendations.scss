@@ -1,0 +1,51 @@
+.recommendations {
+}
+.recommendations-container {
+		width: 80%;
+		margin: 0 auto;
+		padding: 50px 0;
+		&__itms {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		text-align: center;
+		}
+
+		&__itm {
+			display: grid;
+			grid-template-rows: repeat(5, max-content);
+			box-shadow: $shadow;
+			padding: 20px 10px;
+			gap: 7px;
+			border-radius: 5px;
+		}
+
+		&__icons {
+			text-align: right;
+			svg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&__img {
+			padding: 0 15px;
+			img{
+				width: 100%;
+			}
+		}
+
+		&__price {
+		}
+
+		&__name {
+		}
+
+		.btn{
+			width: min-content;
+			min-width: 40%;
+			padding: 10px;
+			margin: 0 auto;
+		}
+}
+
